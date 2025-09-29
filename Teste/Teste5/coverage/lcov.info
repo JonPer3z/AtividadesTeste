@@ -1,0 +1,17 @@
+TN:
+SF:src\script.js
+FN:1,manipularFrase
+FNF:1
+FNH:1
+FNDA:9,manipularFrase
+DA:2,9
+DA:3,4
+DA:6,5
+DA:13,1
+LF:4
+LH:4
+BRDA:2,0,0,4
+BRDA:2,0,1,5
+BRF:2
+BRH:2
+end_of_record
