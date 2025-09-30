@@ -2,7 +2,7 @@ const { calcularDesconto } = require('./script');
 
 describe('Função calcularDesconto()', () => {
 
-  test('Calcula corretamente desconto de 10% em R$100', () => {
+  test('Calcula corretamente desconto de 10% em R$200', () => {
     const resultado = calcularDesconto(200, 10);
     expect(resultado.precoOriginal).toBe(200);
     expect(resultado.descontoPercentual).toBe(10);
@@ -21,7 +21,7 @@ describe('Função calcularDesconto()', () => {
     const resultado = calcularDesconto(123.45, 12.5);
     expect(resultado.precoOriginal).toBe(123.45);
     expect(resultado.descontoPercentual).toBe(12.5);
-    expect(resultado.precoFinal).toBe(108.02); // CORRETO
+    expect(resultado.precoFinal).toBe(108.02); 
   });
 
   test('Lança erro para preço negativo ou inválido', () => {
@@ -29,11 +29,11 @@ describe('Função calcularDesconto()', () => {
     expect(() => calcularDesconto('abc', 10)).toThrow('Preço inválido');
   });
 
-  test('Lança erro para desconto inválido', () => {
-    expect(() => calcularDesconto(100, 10)).toThrow('Desconto inválido');
-    expect(() => calcularDesconto(100, 150)).toThrow('Desconto inválido');
-    expect(() => calcularDesconto(100, 'abc')).toThrow('Desconto inválido');
-  });
+test('Lança erro para desconto inválido', () => {
+  expect(() => calcularDesconto(100, 150)).toThrow('Desconto inválido');
+  expect(() => calcularDesconto(100, 'abc')).toThrow('Desconto inválido');
+  expect(() => calcularDesconto(100, -10)).toThrow('Desconto inválido');
+});
 
   test('Calcula corretamente desconto de 0%', () => {
     const resultado = calcularDesconto(50, 0);

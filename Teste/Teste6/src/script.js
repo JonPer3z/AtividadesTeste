@@ -7,20 +7,18 @@ function mostrarResultado(disciplina) {
 
 function contarVogais(str) {
   if (typeof str !== 'string') {
-    throw new Error("Entrada inválida: Esperada uma string.");
+    throw new Error('A entrada deve ser uma string.');
   }
 
   if (str.length === 0) {
     return 0;
   }
 
-  const vogais = 'aeiouáéíóúãõâêîôû';
+  const vogais = 'aeiou';
   let contador = 0;
 
-  const lowerStr = str.toLowerCase();
-
-  for (let i = 0; i < lowerStr.length; i++) {
-    if (vogais.includes(lowerStr[i])) {
+  for (let char of str.toLowerCase()) {
+    if (vogais.includes(char)) {
       contador++;
     }
   }
@@ -28,4 +26,4 @@ function contarVogais(str) {
   return contador;
 }
 
-module.exports = { mostrarResultado, contarVogais };
+module.exports = { mostrarResultado, contarVogais};
