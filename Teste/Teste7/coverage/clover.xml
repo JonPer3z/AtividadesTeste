@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1759190621682" clover="3.2.0">
-  <project timestamp="1759190621682" name="All files">
+<coverage generated="1759194729096" clover="3.2.0">
+  <project timestamp="1759194729096" name="All files">
     <metrics statements="9" coveredstatements="9" conditionals="9" coveredconditionals="9" methods="1" coveredmethods="1" elements="19" coveredelements="19" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
-    <file name="script.js" path="/home/jonperez/Documentos/AtividadesTeste/Teste/Teste7/src/script.js">
+    <file name="script.js" path="C:\Users\User\Desktop\AtividadesTeste\Teste\Teste7\src\script.js">
       <metrics statements="9" coveredstatements="9" conditionals="9" coveredconditionals="9" methods="1" coveredmethods="1"/>
       <line num="2" count="11" type="stmt"/>
       <line num="3" count="11" type="stmt"/>
